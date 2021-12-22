@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#one").click(function(){
+    $("p").prepend(" <b>hiii</b>.");
+  });
+
+  $("#two").click(function(){
+    $("ol").prepend("<li>Jquery</li>");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>good morning</p>
+<p>This is second paragraph.</p>
+
+<ol>
+  <li>html</li>
+  <li>css</li>
+  <li>javascript</li>
+</ol>
+
+<button id="one">prepend</button>
+<button id="two">prepend list</button>
+
+</body>
+</html>
